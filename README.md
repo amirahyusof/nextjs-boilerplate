@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Next.js Boilerplate
 
-## Getting Started
+This is a modern **Next.js 14 (React 19)** boilerplate with:
 
-First, run the development server:
+✅ TypeScript  
+✅ Tailwind CSS  
+✅ shadcn/ui (accessible, beautiful React components)  
+✅ App Router & latest Next.js features
+
+---
+
+## 🌟 Features
+
+- Next.js 14 (React 19 stable)
+- TypeScript support
+- Tailwind CSS fully configured
+- shadcn/ui component library integrated
+- App Router (`/app` directory)
+- Pre-configured folder structure
+
+---
+
+## 💻 Quick Start
+
+### 1️⃣ Use this template
+
+Click **"Use this template"** at the top of this repo to create a fresh new project **without copying git history**.
+
+### 2️⃣ Clone your new repo
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/your-new-repo-name.git
+cd your-new-repo-name
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3️⃣ Install dependencies
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 4️⃣ Run development server
+````bash
+npm run dev
+```
+Open http://localhost:3000 and start building!
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ♻️ Manual copy method (if not using template)
+```bash
+git clone https://github.com/yourusername/nextjs-boilerplate.git my-new-app
+cd my-new-app
+rm -rf .git
+git init
+git add .
+git commit -m "Start new project from boilerplate"
+npm install
+npm run dev
+```
 
-## Learn More
+## ✨ Example usage
+``tsx
+import { Button } from "@/components/ui/button";
 
-To learn more about Next.js, take a look at the following resources:
+export default function Home() {
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-center p-8">
+      <h1 className="text-3xl font-bold mb-6">Welcome to My New Project 🚀</h1>
+      <Button>Click Me</Button>
+    </main>
+  );
+}
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Customize
+Update project name in package.json
+Change global styles in app/globals.css
+Adjust Tailwind theme in tailwind.config.js
+Add new shadcn/ui components using:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npx shadcn-ui@latest add <component>
+```
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 💬 Need help?
+Feel free to open an issue or discussion. Happy coding! 💖
