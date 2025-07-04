@@ -39,7 +39,7 @@ npm install
 ```
 
 ### 4️⃣ Run development server
-````bash
+```bash
 npm run dev
 ```
 Open http://localhost:3000 and start building!
